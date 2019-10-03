@@ -1,0 +1,7 @@
+- Run the job_dispatcher_v2.sh script 
+	# ./job_dispatcher_v2.sh (path to drives) (# of drives)
+	# ./job_dispatcher_v2.sh /home/radarops 16			{ Note how there's no slash after radarops }
+
+- After the joblist has been formed, run ParallelRunScript.sh which will turn all .dat files into .mat and counters.mat
+	# ./ParallelRunScript.sh (# of threads) (joblist.txt)
+	# ./ParallelRunScript.sh 48 new_joblist.txt
